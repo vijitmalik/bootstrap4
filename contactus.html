@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Ristorante Con Fusion</a>
+          <a class="navbar-brand mr-auto" href="index.html"><img src="img/logo.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -89,28 +89,51 @@
                <div class="col-12">
                   <h3>Send us your Feedback</h3>
               </div>
-                <div class="col-12 col-md-9">
-                   <form action="#">
-                     <div class="form-group row">
-                       <label class="col-sm-3" for="email">Email:</label>
-                       <input class="col-sm-9" type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              <div class="col-9 ">
+                 <form action="#">
+                   <div class="col-12 form-group row">
+                     <label class="col-md-3" for="firstname">First Name</label>
+                     <input class="col-md-9 form-control" type="text" name="firstname" placeholder="First Name">
+                   </div>
+                     <div class="col-12  form-group row">
+                       <label class="col-md-3" for="lastname">Last Name</label>
+                       <input class="col-md-9 form-control" type="text" name="lastname" placeholder="last Name">
                      </div>
-                      <div class="form-group row">
-                       <label class="col-sm-3" for="pwd">Password:</label>
-                       <input class="col-sm-9" type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                     </idv>
-                     <div class="form-group form-check row col-offset-3">
-
-                         <input class="form-check-input col-offset-3" type="checkbox" name="remember">
-                         <label class="form-check-label "> Remember me
-                       </label>
+                     <div class="col-12  form-group row">
+                       <label class="col-md-3" for="lastname">Contact Tel.</label>
+                       <input class="col-md-3 form-control" type="text" name="areacode" placeholder="Area Code">
+                       <input class="offset-1 col-md-5 form-control" type="text" name="telnumber" placeholder="Tel. Number">
                      </div>
-                     <button type="submit" class="btn btn-primary">Submit</button>
-                   </form>
+                     <div class="col-12 form-group row">
+                       <label class="col-md-3" for="email">Email</label>
+                       <input class="col-md-9 form-control" type="text" name="email" placeholder="Email">
+                     </div>
+                     <div class="col-12 form-group row">
+                       <div class="col-md-6 offset-md-3 form-check">
+                         <input type="checkbox" name="approve" id="approve" class="form-check-input">
+                         <label class="form-check-label" for="approve"><strong>May we contact you?</strong></label>
+                       </div>
+                       <div class="col-md-3">
+                         <select class="form-control" name="">
+                           <option>Tel.</option>
+                           <option>Email</option>
+                         </select>
+                       </div>
+                     </div>
+                     <div class="col-12 form-group row">
+                       <label for="feedback" class="col-md-3 col-form-label">Your Feedback</label>
+                       <div class="col-md-9">
+                           <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                       </div>
+                   </div>
+                   <div class="col-12 form-group row">
+                       <div class="offset-md-3 col-md-9">
+                           <button type="submit" class="btn btn-primary">Send Feedback</button>
+                       </div>
+                   </div>
+                 </form>
+              </div>
 
-                </div>
-                 <div class="col-12 col-md">
-                </div>
            </div>
 
 
