@@ -4,16 +4,15 @@
 <head>
 
     <title>Ristorante Con Fusion: About Us</title>
-    <!-- Required meta tags always come first -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,9 +21,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand" href="index.html">Ristorante Con Fusion</a>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
@@ -79,24 +78,46 @@
                 <h5>Map of our Location</h5>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
-              <div class="btn-group" role="group">
-               <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
-               <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-               <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
-           </div>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+852 1234 5678"><i class="fa fa-phone"></i> call</a>
+                    <a role="button" class="btn btn-info"> <i class="fa fa-skype"></i>skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:mailto:confusion@food.net"><i class="fa fa-envelope-o"></i>E-mail</a>
+
+                </div>
             </div>
+            <div class="row row-content">
+               <div class="col-12">
+                  <h3>Send us your Feedback</h3>
+              </div>
+                <div class="col-12 col-md-9">
+                   <form action="#">
+                     <div class="form-group row">
+                       <label class="col-sm-3" for="email">Email:</label>
+                       <input class="col-sm-9" type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                     </div>
+                      <div class="form-group row">
+                       <label class="col-sm-3" for="pwd">Password:</label>
+                       <input class="col-sm-9" type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                     </idv>
+                     <div class="form-group form-check row col-offset-3">
+
+                         <input class="form-check-input col-offset-3" type="checkbox" name="remember">
+                         <label class="form-check-label "> Remember me
+                       </label>
+                     </div>
+                     <button type="submit" class="btn btn-primary">Submit</button>
+                   </form>
+
+                </div>
+                 <div class="col-12 col-md">
+                </div>
+           </div>
+
+
         </div>
 
-        <div class="row row-content">
-           <div class="col-12">
-              <h3>Send us your Feedback</h3>
-           </div>
-            <div class="col-12 col-md-9">
-                Form goes here
-            </div>
-             <div class="col-12 col-md">
-            </div>
-       </div>
+
+
 
     </div>
 
@@ -124,6 +145,7 @@
                       <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
+
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
@@ -135,6 +157,7 @@
                     </div>
                 </div>
            </div>
+
            <div class="row justify-content-center">
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
