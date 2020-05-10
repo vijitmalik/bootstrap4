@@ -37,17 +37,20 @@
                   <h1>Ristorante con Fusion</h1>
                   <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div>
-                  <div class="col-12 col-sm align-self-center">
+
+                  <div class="col-12 col-sm-3 align-self-center">
                   <img src="img/logo.png" class="img-fluid">
-              </div>
                 </div>
-            </div>
+                <div class="col-12 col-sm-3">
+                  <button class="btn-block btn-warning mt-5" type="button" name="button"  ><a href="#reservecard"style="text-decoration:none">Register Table</a></button>
+                </div>
+
+           </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="row row-contentp-5">
+    <div class="container mt-5 mb-5">
+        <div class="row row-content">
             <div class="col-sm-3 order-sm-last col-12 p-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -65,12 +68,20 @@
 
 
         <div class="row row-content p-3">
-            <div class="col-12 col-sm-3 order-sm-first">
+            <div class="col-12 col-sm-3 order-sm-first p-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm-9 order-sm-last">
-                <h2>Weekend Grand Buffet</h2>
+
+
+            <div class="media p-3 ">
+              <div class="media-body ">
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
                 <p  class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+
+              </div>
+              <img class="ml-3 img-thumbnail align-self-center" src="img/Buffet.png" alt="buffet">
+            </div>
             </div>
         </div>
 
@@ -93,10 +104,71 @@
                    </div>
                </div>
              </div>
+
         </div>
+        <div class="row row-content " id="reservecard">
+          <div class=" col-12 col-sm-8 offset-sm-2">
+
+         <div class="card">
+           <div class="card-header bg-warning">
+             <h2 class="card-title">Reserve a Table</h2>
+           </div>
+           <div class="card-body">
+             <div class="row row-content">
+              <div class="col-3">
+                <h3>Number of Guests</h3>
+              </div>
+              <div class="col-8 offset-1">
+                <form action="#">
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input"  name="option">
+                    <label class="form-check-label" for="inlineradio1">1</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input"  name="option">
+                    <label class="form-check-label" for="inlineradio2">2</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input"  name="option">
+                    <label class="form-check-label" for="inlineradio3">3</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input"  name="option">
+                    <label class="form-check-label" for="inlineradio4">4</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input"  name="option">
+                    <label class="form-check-label" for="inlineradio5">5</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input"  name="option">
+                    <label class="form-check-label" for="inlineradio6">6</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+           <div class="row row-content">
+             <div class="col-3">
+               <h3>Date and Time</h3>
+             </div>
+             <div class="offset-1 row col-8">
+               <input class="col-5 form-control" type="date"  placeholder="Date">
+               <input class="col-5 form-control" type="time"  placeholder="Time">
+             </div>
+           </div>
+              <div class="row col-3 offset-4">
+                <button class="btn-primary" type="button" name="button">Reserve</button>
+              </div>
+           </div>
+
+         </div>
+
+       </div>
+       </div>
     </div>
 
-    <footer class="footer jumbotron">
+
+    <footer class="footer jumbotron mb-0">
       <div class="container">
           <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
@@ -142,5 +214,4 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
