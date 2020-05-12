@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
-  "author": "",
+  "author": "vijitmalik",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.5.4"
@@ -19,5 +19,16 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijitmalik/bootstrap4.git"
+  },
+  "keywords": [
+    "bootstrap4"
+  ],
+  "bugs": {
+    "url": "https://github.com/vijitmalik/bootstrap4/issues"
+  },
+  "homepage": "https://github.com/vijitmalik/bootstrap4#readme"
 }
