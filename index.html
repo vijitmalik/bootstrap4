@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Ristorante Con Fusion</title>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+ <head>
+     <title>Ristorante Con Fusion</title>
+     <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+   <link rel="stylesheet" href="style.css">
+ </head>
 
-<body>
+ <body>
   <nav class="navbar navbar-dark  navbar-expand-sm fixed-top">
       <div class="container">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -21,15 +21,55 @@
           </button>
            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
           <div class="collapse navbar-collapse" id="Navbar">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav mr-auto">
                       <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                       <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                       <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                       <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
               </ul>
+                      <div class="navbar-text">
+                        <a data-toggle="modal" data-target="#loginmodal">
+                          <span class="fa fa-sign-in"></span>Login
+                        </a>
+                      </div>
           </div>
       </div>
   </nav>
+       <div class="modal fade" role="dialog" id="loginmodal">
+          <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Login</h4>
+                  <button class="close" type="button" data-dismiss="modal" name="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                       <div class="form-row">
+                           <div class="form-group col-sm-4">
+                                   <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                   <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                           </div>
+                           <div class="form-group col-sm-4">
+                               <label class="sr-only" for="exampleInputPassword3">Password</label>
+                               <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                           </div>
+                           <div class="col-sm-auto">
+                               <div class="form-check">
+                                   <input class="form-check-input" type="checkbox">
+                                   <label class="form-check-label"> Remember me
+                                   </label>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="form-row">
+                           <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                           <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                       </div>
+                   </form>
+                </div>
+              </div>
+          </div>
+       </div>
    <header class="jumbotron jumbotron-fluid">
        <div class="container">
            <div class="row row-header">
@@ -42,7 +82,8 @@
                   <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3">
-                  <button class="btn-block btn-warning mt-5" type="button" name="button"  ><a href="#reservecard"style="text-decoration:none">Register Table</a></button>
+                  <a  href="#reservecard"style="text-decoration:none" ><button class="btn-block btn-warning mt-5" type="button" name="button" data-toggle="tooltip" data-html="true"
+                       title="Or call us at <strong>+852 12345678</strong>" data-placement="bottom" >Register Table</button></a>
                 </div>
 
            </div>
@@ -213,5 +254,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+ </body>
 </html>
